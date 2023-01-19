@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Codificador - Decodificador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header> 
+            <div class="caja">
+                <h1><img src="imagenes/Vector.png" class="logo"></h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="entrada">
+                <div class="entrada-texto">
+                    <textarea cols="32" rows="17" class="input-text" id="input-area" placeholder="Inserte texto"></textarea>
+                </div>
+                <p>⚠ Solo letras minúsculas y sin acentos</p>
+
+                <div class="botones_entrada">
+                    <button class="botones" id="btnEncriptar">Encriptar</button>
+                    <button class="botones" id="btnDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+
+            <section class="salida">
+                <div class="salida-texto">
+                    <div id="salida-imagen">
+                        <img id="salida-label" src="imagenes/Muñeco.png" alt="sinTexto">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <h1>Ingresa el texto que desees encriptar o desencriptar.</h1>
+
+                    </div>
+                    <textarea cols="32" rows="18" class="output-text" id="output-area" readonly></textarea>
+                </div>
+
+                <div class="botones_salida">
+                    <button class="botones" id="btnCopiar">Copiar</button>
+                </div>
+
+                
+            </section>
+
+        </main>
+
+        <script src="logica.js"></script>
+
+    </body>
+
+</html>
+
+
